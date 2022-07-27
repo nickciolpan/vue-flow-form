@@ -14,7 +14,7 @@ export default class LanguageModel {
     this.clear = "Clear";
     this.continue = "Continue";
     this.skip = "Skip";
-    this.pressEnter = "Or Press :enterKey";
+    this.pressEnter = "or press :enterKey";
     this.multipleChoiceHelpText = "Choose as many as you like";
     this.multipleChoiceHelpTextSingle = "Choose only one answer";
     this.otherPrompt = "Other";
