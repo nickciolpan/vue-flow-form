@@ -2070,7 +2070,6 @@ var script$3 = {
           this.$refs.slider.$el.querySelector(".vue-slider-process").style
             .width !== "0%"
         ) {
-          console.log("merge");
           this.$refs.slider.$el.querySelector(
             ".vue-slider-dot-handle"
           ).style.backgroundColor = "#d57733";
