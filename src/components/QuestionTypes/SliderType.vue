@@ -64,6 +64,9 @@ export default {
   mounted() {
     this.$nextTick(() => {
       this.$refs.slider.$el.querySelector(".vue-slider-dot").style.left = "50%";
+      this.$refs.slider.$el.querySelector(
+        ".vue-slider-dot-handle"
+      ).style.backgroundColor = "#ffe1cb";
     });
 
     this.interval = setInterval(() => {
