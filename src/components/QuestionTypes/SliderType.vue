@@ -71,9 +71,13 @@ export default {
 
     this.interval = setInterval(() => {
       if (this.value === null && !!this.$refs.slider)
+        this.$refs.slider.$el.querySelector(".vue-slider-dot").style.pointerEvents = 'none';
         this.$refs.slider.$el.querySelector(".vue-slider-dot").style.left =
           "50%";
     }, 0);
+  },
+  updated() {
+      this.$refs.slider.$el.querySelector(".vue-slider-dot").style.pointerEvents = 'auto';
   },
   methods: {
     focus() {
